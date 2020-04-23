@@ -1,0 +1,13 @@
+@import "navbar";
+@import "slide-menu";
+@import "hero";
+
+.header {
+  &__slide-menu {
+    z-index: 1;
+    position: fixed;
+    top: 105px;
+    width: 100%;
+    padding: 20px 0 20px 40px;
+  }
+}

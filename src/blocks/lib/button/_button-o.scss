@@ -1,0 +1,14 @@
+.button-o {
+  @include text-normal;
+  font-size: 16px;
+  color: $primary;
+  background-color: white;
+  border: 1px solid $primary;
+  padding: 17px 40px 15px 40px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.button-o:hover {
+  opacity: 0.8;
+}

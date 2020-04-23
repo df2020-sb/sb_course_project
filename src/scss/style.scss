@@ -1,3 +1,53 @@
+// UTILITIES **********************
+
+// Grid
+@import "../utilities/grid";
+
+// Fonts
+@import "../utilities/fonts";
+
+// Colors
+@import "../utilities/colors";
+
+// LIBRARY BLOCKS **********************
+
+// Button-o
+@import "../blocks/lib/button/button-o";
+
+// Button
+@import "../blocks/lib/button/button";
+
+// Section Title
+@import "../blocks/lib/section-title/section-title";
+
+// PROJECT BLOCKS **********************
+
+// Header
+@import "../blocks/project/_header/header";
+
+// Services
+@import "../blocks/project/_services/services";
+
+// Portfolio
+@import "../blocks/project/_portfolio/portfolio";
+
+//  Price
+@import "../blocks/project/_price/price";
+
+// Footer
+@import "../blocks/project/footer/footer";
+// Form
+@import "../blocks/project/form/form";
+
+// COMMON STYLES **********************
 body {
-  background-color: blue;
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: $background;
 }
+
+// MEDIA ******************************
+@import "1200";
+@import "940";
+@import "688";
+@import "458";

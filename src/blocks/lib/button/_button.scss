@@ -1,0 +1,14 @@
+.button {
+  @include text-normal;
+  font-size: 18px;
+  color: white;
+  border: none;
+  background-color: $active;
+  padding: 20px;
+  cursor: pointer;
+  width: 280px;
+  outline: none;
+}
+.button:hover {
+  opacity: 0.8;
+}

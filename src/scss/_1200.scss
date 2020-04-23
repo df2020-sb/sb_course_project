@@ -1,0 +1,242 @@
+@media (max-width: 1200px) {
+  .navbar__menu {
+    &__button {
+      display: inline-block;
+    }
+
+    &__item {
+      display: none;
+    }
+  }
+
+  .hero {
+    &__image {
+      &__photo {
+        margin-right: -130px;
+      }
+      &__gradient-bg {
+        top: 80px;
+        right: -460px;
+      }
+    }
+
+    &__decor {
+      right: 50%;
+      top: 50%;
+      -webkit-animation: none;
+      animation: none;
+      &__hash {
+        font-size: 42px;
+        -webkit-animation: hash 1000ms 1100ms forwards;
+        animation: hash 1000ms 1100ms forwards;
+      }
+
+      &__hash-ios {
+        -webkit-animation: none;
+        animation: none;
+        right: calc(150% + 20vw);
+        top: 88%;
+      }
+
+      &__brackets-1 {
+        display: none;
+        animation: none;
+        -webkit-animation: none;
+      }
+
+      &__brackets-2 {
+        font-size: 42px;
+        -webkit-animation: brackets-2 1000ms 1200ms forwards;
+        animation: brackets-2 1000ms 900ms forwards;
+      }
+
+      &__brackets-2-ios {
+        animation: none;
+        right: calc(90% + 10vw);
+        top: 60%;
+      }
+
+      &__div {
+        font-size: 28px;
+        -webkit-animation: div 1000ms 1100ms forwards;
+        animation: div 1000ms 1100ms forwards;
+      }
+
+      &__div-ios {
+        animation: none;
+        right: calc(130% + 20vw);
+        top: 20%;
+      }
+
+      &__html {
+        font-size: 40px;
+        -webkit-animation: html 1000ms 1100ms forwards;
+        animation: html 1000ms 1100ms forwards;
+      }
+
+      &__html-ios {
+        animation: none;
+        right: calc(80% + 10vw);
+        top: 12%;
+      }
+    }
+  }
+
+  // Animations
+
+  // decor
+
+  @-webkit-keyframes hash {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      right: calc(150% + 20vw);
+      top: 88%;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+
+  @keyframes hash {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      right: calc(150% + 20vw);
+      top: 88%;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+
+  @-webkit-keyframes brackets-2 {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      right: calc(110% + 10vw);
+      top: 67%;
+      -webkit-transform: rotate(1000deg);
+      transform: rotate(1000deg);
+    }
+  }
+  @keyframes brackets-2 {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      right: calc(80% + 10vw);
+      top: 60%;
+      -webkit-transform: rotate(1000deg);
+      transform: rotate(1000deg);
+    }
+  }
+
+  @-webkit-keyframes div {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      right: calc(110% + 20vw);
+      top: 20%;
+      -webkit-transform: rotate(740deg);
+      transform: rotate(740deg);
+    }
+  }
+
+  @keyframes div {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      right: calc(110% + 20vw);
+      top: 20%;
+      -webkit-transform: rotate(740deg);
+      transform: rotate(740deg);
+    }
+  }
+
+  @-webkit-keyframes html {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      right: calc(80% + 20vw);
+      top: 12%;
+      -webkit-transform: rotate(510deg);
+      transform: rotate(510deg);
+    }
+  }
+
+  @keyframes html {
+    0% {
+      right: 50%;
+      top: 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      right: calc(80% + 10vw);
+      top: 12%;
+      -webkit-transform: rotate(510deg);
+      transform: rotate(510deg);
+    }
+  }
+
+  .services {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      min-width: 50%;
+      margin-bottom: 86px;
+    }
+    &__button {
+      margin-top: 10px;
+    }
+  }
+
+  .price {
+    &__decor {
+      &__hash {
+        left: 10%;
+      }
+      &__brackets-2 {
+        display: none;
+      }
+
+      &__brackets-1 {
+        display: none;
+      }
+    }
+  }
+}

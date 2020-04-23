@@ -7,12 +7,14 @@ const concat = require("gulp-concat");
 const postcss = require("gulp-postcss");
 const sourcemaps = require("gulp-sourcemaps");
 const uglify = require("gulp-uglify");
+const terser = require("gulp-terser");
+const replace = require("gulp-replace");
 
 // Paths
 
 const files = {
-  scssPath: "src/scss/**/*.scss",
-  jsPath: "src/js/**/*.js"
+  scssPath: "src/**/**/*.scss",
+  jsPath: "src/**/**/*.js",
 };
 
 // Sass
@@ -31,8 +33,17 @@ function scssTask() {
 function jsTask() {
   return src(files.jsPath)
     .pipe(concat("final.js"))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(dest("dist"));
+}
+
+// Cachebuster
+
+const cbString = new Date().getTime();
+function cacheTask() {
+  return src(["index.html"])
+    .pipe(replace(/cb=\d+/g, "cb=" + cbString))
+    .pipe(dest("."));
 }
 
 // Watch
@@ -43,35 +54,4 @@ function watchTask() {
 
 // Default
 
-exports.default = series(parallel(scssTask, jsTask), watchTask);
-
-// const uglifycss = require("gulp-uglifycss");
-
-// sass.compiler = require("node-sass");
-
-// gulp.task("sass", function() {
-//   return gulp
-//     .src("src/scss/*.scss")
-//     .pipe(sass().on("error", sass.logError))
-//     .pipe(gulp.dest("src/css"));
-// });
-
-// gulp.task("css", function() {
-//   gulp
-//     .src("src/css/*.css")
-//     .pipe(
-//       uglifycss({
-//         uglyComments: true
-//       })
-//     )
-//     .pipe(gulp.dest("./dist/"));
-// });
-
-// gulp.task("run", gulp.parallel("sass", "css"));
-
-// gulp.task("watch", function() {
-//   gulp.watch("src/scss/*.scss", gulp.parallel("sass"));
-//   gulp.watch("src/css/*.css", gulp.parallel("css"));
-// });
-
-// gulp.task("default", gulp.parallel("run", "watch"));
+exports.default = series(parallel(scssTask, jsTask), cacheTask, watchTask);

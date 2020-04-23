@@ -6,15 +6,280 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Персональный сайт</title>
-  <!-- CSS File -->
-  <link rel="stylesheet" href="dist/style.css">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="dist/scss/normalize.css" type='text/css'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/scss/style.css?cb=1587668192278">
 </head>
 
 <body>
+  <div class="form" hidden>
+    <div class="overlay"></div>
+    <form class="contact-form container" method="post" novalidate>
+      <div class="contact-form__wrapper">
+        <div class="contact-form__close"></div>
+        <p class="contact-form__title"> Я свяжусь с вами<br>в ближайшее время</p>
+        <div class="contact-form__group group-1">
 
+          <input class="contact-form__input name" type='text' size="50" required />
+          <label class="contact-form__label">Ваше имя</label>
+          <span class="contact-form__error error-name"></span>
+        </div>
+
+        <div class="contact-form__group group-2">
+          <input class="contact-form__input phone" type='text' size="20" data-mask="+7 (000) 000 00 00" placeholder=""
+            required />
+          <label class="contact-form__label">Телефон</label>
+          <span class="contact-form__error error-phone"></span>
+        </div>
+
+        <div class="contact-form__group group-3">
+          <input class="contact-form__input mail" type='text' size="50" required />
+          <label class="contact-form__label">Электронная почта</label>
+          <span class="contact-form__error error-mail"></span>
+        </div>
+
+        <input type="submit" class="button contact-form__button" value="Отправить" />
+      </div>
+    </form>
+  </div>
+  <!-- /.form -->
+  <header class="header">
+    <nav class="slide-menu header__slide-menu">
+      <a href="#services" class="slide-menu__item ">Услуги</a>
+      <a href="#portfolio" class="slide-menu__item menu-portfolio">Портфолио</a>
+      <a href="#portfolio__button" class="slide-menu__item ">Стоимость</a>
+    </nav>
+    <div class="navbar navbar__fixed">
+      <div class="container navbar__container">
+        <nav class="navbar__menu">
+          <button class="navbar__menu__button"></button>
+          <a href="#services" class="navbar__menu__item menu-services">Услуги</a>
+          <a href="#portfolio" class="navbar__menu__item menu-portfolio">Портфолио</a>
+          <a href="#portfolio__button" class="navbar__menu__item menu-price">Стоимость</a>
+        </nav>
+        <div class="navbar__contact">
+          <a class="navbar__contact__phone-number" href="tel:+74999955577">+7 (499) 995-55-77</a>
+          <button class="button-o navbar__contact__button-large">Заказать звонок</button>
+          <button class="navbar__contact__button-small"></button>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navbar -->
+    <div class="hero">
+      <div class="hero__container container">
+        <div class="hero__info">
+          <h1 class="hero__info__name">Дмитрий Алексеев</h1>
+          <span class="hero__info__profession">Фронтенд-разработчик и&nbsp;веб&#8209;верстальщик</span>
+          <button class="button hero__info__button">Узнать больше</button>
+        </div>
+        <div class=" hero__image">
+          <span class="hero__decor hero__decor__hash">#</span>
+          <span class="hero__decor hero__decor__hash-2">#</span>
+          <span class="hero__decor hero__decor__div">&lt;div&gt;</span>
+          <span class="hero__decor hero__decor__div-2">&lt;div&gt;</span>
+          <span class="hero__decor hero__decor__brackets-1">{&nbsp;}</span>
+          <span class="hero__decor hero__decor__brackets-2">{&nbsp;}</span>
+          <span class="hero__decor hero__decor__html">&lt;/&gt;</span>
+          <span class="hero__decor hero__decor__html-2">&lt;/&gt;</span>
+          <img class="hero__image__photo lax" data-lax-translate-y="0 0, 400 80" src="dist/img/photo.png" alt="Фото">
+          <svg class="hero__image__gradient-bg" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="920px" height="764px" viewBox="0 0 920 764"
+            preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="PSgrad_0" x1="0%" x2="50%" y1="70%" y2="0%">
+                <stop offset="0%" stop-color="rgb(255,143,90)" stop-opacity="1" />
+                <stop offset="99%" stop-color="rgb(255,47,150)" stop-opacity="1" />
+              </linearGradient>
+            </defs>
+
+            <path fill="url(#PSgrad_0)"
+              d="M395.520,40.407 C502.261,-10.049 602.994,-10.204 687.212,27.671 C771.647,65.238 839.568,140.836 885.703,234.785 C929.973,329.669 929.926,431.584 893.771,514.027 C857.115,597.700 796.105,660.782 712.966,705.804 C668.936,728.473 622.654,744.002 563.818,753.535 C505.757,762.929 435.142,766.325 360.325,761.479 C211.851,752.158 45.449,708.398 10.358,609.690 C-9.529,560.677 2.954,504.492 27.679,447.950 C52.809,391.326 90.181,334.346 129.419,281.835 C169.063,229.242 210.573,181.118 253.309,140.306 C296.450,99.410 340.817,65.827 395.520,40.407 L395.520,40.407 Z" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.hero -->
+  </header>
+  <!-- /.header -->
+  <main>
+    <section class="services" id="services">
+      <div class="services__container container">
+        <h2 class="services__title section-title">Что я делаю</h2>
+        <div class="services__row">
+          <div class="services__column">
+            <div class="services-item" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"
+              data-aos-offset="50">
+              <img src="dist/img/tools-and-utensils.png" class="services-item__icon"
+                alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+              <div class="services-item__text">Вёрстка лендинг–страниц<br>и&nbsp;сайтов любой сложности</div>
+            </div>
+          </div>
+          <div class="services__column">
+            <div class="services-item" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"
+              data-aos-offset="50" data-aos-delay="50">
+              <img src="dist/img/responsive.png" class="services-item__icon"
+                alt="Адаптивная вёрстка под все браузеры и устройства">
+              <div class="services-item__text">Адаптивная вёрстка под&nbsp;все<br>браузеры и&nbsp;устройства</div>
+            </div>
+          </div>
+          <div class="services__column">
+            <div class="services-item" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"
+              data-aos-delay="100" data-aos-offset="50">
+              <img src="dist/img/programming.png" class="services-item__icon"
+                alt="Frontend–разработка и программирование">
+              <div class="services-item__text">Frontend–разработка<br>и&nbsp;программирование</div>
+            </div>
+          </div>
+          <div class="services__column" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"
+            data-aos-delay="150" data-aos-offset="50">
+            <div class="services-item">
+              <img src="dist/img/coding.png" class="services-item__icon"
+                alt="Исправление и доработка существующей вёрстки">
+              <div class="services-item__text">Исправление и доработка<br>существующей вёрстки</div>
+            </div>
+          </div>
+        </div>
+        <button class="button services__button">Узнать стоимость</button>
+      </div>
+    </section>
+    <!-- /.services -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__container container">
+        <h2 class="portfolio__title section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="50"
+          data-aos-duration="600">Примеры моих работ</h2>
+        <!-- Slider -->
+        <div class="slider" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="50"
+          data-aos-duration="600">
+          <div class="slider__item">
+            <img src="dist/img/Layer_1.png" class="slide-image" alt="Сайт психолога Веры Антоновой">
+            <div class="slide-text">Сайт психолога Веры Антоновой</div>
+          </div>
+          <div class="slider__item">
+            <img src="dist/img/Layer_0.png" class="slide-image" alt="Сайт магазина детской одежды">
+            <div class="slide-text">Сайт магазина детской одежды</div>
+          </div>
+          <div class="slider__item">
+            <img src="dist/img/Layer_2.png" class="slide-image" alt="Сайт магазина «Рыболов»">
+            <div class="slide-text">Сайт магазина «Рыболов»</div>
+          </div>
+          <div class="slider__item">
+            <img src="dist/img/Layer_4.png" class="slide-image" alt="Сайт психолога Веры Антоновой">
+            <div class="slide-text">Сайт психолога Веры Антоновой</div>
+          </div>
+          <div class="slider__item">
+            <img src="dist/img/Layer_3.png" class="slide-image" alt="Сайт магазина детской одежды">
+            <div class="slide-text">Сайт магазина детской одежды</div>
+          </div>
+          <div class="slider__item">
+            <img src="dist/img/Layer_5.png" class="slide-image" alt="Сайт магазина «Рыболов»">
+            <div class="slide-text">Сайт магазина «Рыболов»</div>
+          </div>
+        </div>
+        <!-- /.slider-->
+        <button class="button portfolio__button" id="portfolio__button">Заказать проект</button>
+      </div>
+    </section>
+    <!-- /.portfolio -->
+    <section class="price" id="price">
+      <div class="price__container container">
+        <h3 class="price__title">Адаптивная вёрстка под&nbsp;все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего
+          за&nbsp;4&nbsp;часа.*</h3>
+        <div class="price__subtitle">
+          <p class="price__subtitle__asterisk">*</p>
+          <p class="price__subtitle__text">Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются
+            индивидуально в&nbsp;зависимости от&nbsp;сложности задач.</p>
+        </div>
+      </div>
+      <span class="price__decor price__decor__brackets-1">{&nbsp;}</span>
+      <span class="price__decor price__decor__hash">#</span>
+      <span class="price__decor price__decor__div">&lt;div&gt;</span>
+      <span class="price__decor price__decor__brackets-2">{&nbsp;}</span>
+      <span class="price__decor price__decor__html">&lt;/&gt;</span>
+    </section>
+    <!-- /.hero-->
+  </main>
+  <!-- /Main -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__column-left">
+        <ul class="footer__menu">
+          <li class="footer__menu__item"><a href="#" class=footer__menu__link>Услуги</a></li>
+          <li class="footer__menu__item"><a href="#" class=footer__menu__link>Портфолио</a></li>
+          <li class="footer__menu__item"><a href="#" class=footer__menu__link>Стоимость</a></li>
+        </ul>
+      </div>
+      <!-- /.footer__column-left-->
+      <div class="footer__column-center">
+        <ul class="footer__contacts">
+          <li class="footer__contacts__item">
+            <i class="fa fa-phone footer__contacts__icon"></i>
+            <a class="footer__contacts__link" href="tel:+74999955577">+7 (499) 995-55-77</a>
+          </li>
+          <li class="footer__contacts__item">
+            <i class="fa fa-envelope footer__contacts__icon"></i>
+            <a class="footer__contacts__link" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.footer__column-center-->
+      <div class="footer__column-right">
+        <button class="button-o footer__button-o">Заказать звонок</button>
+        <button class="button footer__button">Заказать звонок</button>
+        <ul class="footer__social-icons">
+          <li class="footer__social-icons__item">
+            <a href="#">
+              <div class="footer__social-icons__container vk"></div>
+            </a>
+          </li>
+          <li class="footer__social-icons__item">
+            <a href="#">
+              <div class="footer__social-icons__container facebook"></div>
+            </a>
+          </li>
+          <li class="footer__social-icons__item">
+            <a href="#">
+              <div class="footer__social-icons__container twitter"></div>
+            </a>
+          </li>
+          <li class="footer__social-icons__item">
+            <a href="#">
+              <div class="footer__social-icons__container instagram"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.footer__column-right-->
+    </div>
+    <!-- /.footer__container -->
+    <div class="footer__bottom">
+      <p class="copyright">© Дмитрий Алексеев, 2016 – 2018</p>
+    </div>
+  </footer>
+  <!-- /.footer -->
   <!-- JS Files -->
   <script src="src/js/jquery.min.js"></script>
-  <script src="dist/final.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/modernizr-custom.js"></script>
+  <script src="src/js/jquery.mask.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+    window.onload = function () {
+      lax.setup()
+      const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+      }
+      window.requestAnimationFrame(updateLax)
+    }</script>
+  <script src="dist/final.js?cb=1587668192278"></script>
 </body>
 
 </html>

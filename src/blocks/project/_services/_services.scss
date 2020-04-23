@@ -1,0 +1,42 @@
+.services {
+  background-color: white;
+  &__container {
+    z-index: 0;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+  }
+
+  &__row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 25%;
+  }
+
+  &__button {
+    margin: 94px auto;
+  }
+}
+
+.services-item {
+  &__text {
+    @include text-normal;
+    color: $text-caption;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 1.5em;
+  }
+}
