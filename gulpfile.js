@@ -13,8 +13,8 @@ const replace = require("gulp-replace");
 // Paths
 
 const files = {
-  scssPath: "src/**/**/*.scss",
-  jsPath: "src/**/**/*.js",
+  scssPath: "src/**/*.scss",
+  jsPath: "src/**/*.js",
 };
 
 // Sass

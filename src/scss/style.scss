@@ -1,13 +1,27 @@
 // UTILITIES **********************
 
-// Grid
-@import "../utilities/grid";
-
 // Fonts
 @import "../utilities/fonts";
 
 // Colors
 @import "../utilities/colors";
+
+// COMMON STYLES **********************
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  max-width: 1170px;
+  width: calc(100% - 80px);
+}
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: $background;
+}
 
 // LIBRARY BLOCKS **********************
 
@@ -38,13 +52,6 @@
 @import "../blocks/project/footer/footer";
 // Form
 @import "../blocks/project/form/form";
-
-// COMMON STYLES **********************
-body {
-  min-width: 320px;
-  overflow-x: hidden;
-  background-color: $background;
-}
 
 // MEDIA ******************************
 @import "1200";
