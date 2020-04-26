@@ -21,6 +21,8 @@ $(document).ready(function () {
           arrows: false,
           dots: true,
           speed: 800,
+          touchThreshold: 10,
+          swipeToSlide: true,
         },
       },
       {
