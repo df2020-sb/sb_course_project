@@ -18,15 +18,17 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
+    margin: auto 0;
     z-index: 1;
-    margin-top: 197px;
-    z-index: 0;
+    width: 55%;
 
     &__name {
       @include text-black;
       font-size: calc(3em + 1vw);
       color: $text-body;
       margin: 0;
+      width: 100%;
+      overflow-wrap: break-word;
     }
 
     &__profession {
@@ -35,6 +37,8 @@
       line-height: 1.5em;
       color: $text-caption;
       margin-top: 0.5em;
+      width: 100%;
+      overflow-wrap: break-word;
     }
 
     &__button {

@@ -25,11 +25,19 @@
     }
   }
 
+  &__column-center {
+    max-width: 50%;
+  }
+
   &__contacts {
-    margin: 0;
     padding: 0;
+    margin: 0 30px;
+
     &__item {
       list-style: none;
+      display: flex;
+      flex-direction: row;
+      overflow: visible;
     }
     &__item:first-child {
       margin-bottom: 38px;
@@ -67,7 +75,15 @@
       font-size: 25px;
       color: $text-body;
       margin-left: 20px;
+      width: calc(100% - 20px);
+      overflow-wrap: break-word;
     }
+  }
+
+  &__column-right {
+    display: flex;
+
+    flex-direction: column;
   }
 
   &__button {
@@ -82,6 +98,7 @@
   &__social-icons {
     margin: 0;
     padding: 0;
+    width: 100%;
     &__item {
       list-style: none;
       display: inline-block;
@@ -103,7 +120,7 @@
       background: url("../img/footer-icons.svg") -96px 0;
     }
     .instagram {
-      background: url("../img/footer-icons.svg") -134px 0;
+      background: url("../img/footer-icons.svg") -144px 0;
     }
   }
 

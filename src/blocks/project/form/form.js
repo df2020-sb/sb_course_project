@@ -126,8 +126,6 @@ $(function () {
       // older FF
       window.addEventListener("DOMMouseScroll", preventDefault, false);
 
-    // console.log("modernizr", Modernizr.passiveeventlisteners);
-
     window.addEventListener(
       "wheel",
       preventDefault,

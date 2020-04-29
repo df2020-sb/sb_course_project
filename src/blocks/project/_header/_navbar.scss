@@ -20,8 +20,10 @@
   &__menu {
     display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
+    max-width: 50%;
 
     &__button {
       display: none;
@@ -60,6 +62,7 @@
   &__contact {
     display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
     &__phone-number {
