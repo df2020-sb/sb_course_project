@@ -102,11 +102,12 @@ $(function () {
     checkName();
     checkPhone();
     checkMail();
+
     if (!checkName()) {
       $(".name").focus();
     } else if (!checkPhone()) {
       $(".phone").focus();
-    } else if (!checkMail()) {
+    } else if ($(".group-3").is(":visible") && !checkMail()) {
       $(".mail").focus();
     } else {
       $(".form").fadeOut("fast");
