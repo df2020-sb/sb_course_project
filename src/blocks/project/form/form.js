@@ -1,15 +1,26 @@
 $(function () {
   // Form show
+  $(".button:not(.contact-form__button").click(function () {
+    disableScroll();
+    $(".group-3").show();
+    $(".form").fadeIn(200);
+  });
+
   $(
-    ".navbar__contact__button-small, .navbar__contact__button-large, .button-o, .button:not(.contact-form__button"
+    ".navbar__contact__button-small, .navbar__contact__button-large, .footer__button-o, .footer__button"
   ).click(function () {
     disableScroll();
     $(".form").fadeIn(200);
   });
+
   // Form hide
   $(".overlay, .contact-form__close").click(function (e) {
     $(".form").fadeOut("fast");
     enableScroll();
+
+    setTimeout(function () {
+      $(".group-3").hide();
+    }, 500);
   });
   // Submit disabled
   $(".contact-form").submit(function (e) {

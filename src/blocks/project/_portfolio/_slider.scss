@@ -54,7 +54,8 @@
 // Стрелки вынесены в portfolio__container, т.к. slick-lider{overflow:hidden}
 .portfolio__container .slick-arrow {
   position: absolute;
-  top: 370px;
+  color: red;
+  top: 385px;
   z-index: 10;
   font-size: 0;
   width: 60px;

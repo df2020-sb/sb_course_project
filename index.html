@@ -6,11 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Персональный сайт</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff"> -->
   <!-- CSS Files -->
   <link rel="stylesheet" href="dist/scss/normalize.css" type='text/css'>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="dist/scss/style.css?cb=1588186272792">
+  <link rel="stylesheet" href="dist/scss/style.css">
 </head>
 
 <body>
@@ -34,7 +43,7 @@
           <span class="contact-form__error error-phone"></span>
         </div>
 
-        <div class="contact-form__group group-3">
+        <div class="contact-form__group group-3" hidden>
           <input class="contact-form__input mail" type='text' size="50" required />
           <label class="contact-form__label">Электронная почта</label>
           <span class="contact-form__error error-mail"></span>
@@ -144,7 +153,8 @@
             </div>
           </div>
         </div>
-        <button class="button services__button">Узнать стоимость</button>
+        <button class="button services__button" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"
+          data-aos-offset="50" data-aos-delay="50">Узнать стоимость</button>
       </div>
     </section>
     <!-- /.services -->
@@ -156,30 +166,62 @@
         <div class="slider" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="50"
           data-aos-duration="600">
           <div class="slider__item">
-            <img src="dist/img/Layer_1.png" class="slide-image" alt="Сайт психолога Веры Антоновой">
+            <picture>
+              <source type="image/webp" srcset="dist/img/work1.webp 1x, dist/img/work1@2x.webp 2x">
+              <source srcset="dist/img/work1.jpg 1x, dist/img/work1@2x.jpg 2x">
+              <img class="slide-image" src="dist/img/work1.jpg" srcset="dist/img/work1@2x.jpg 2x"
+                alt="Сайт психолога Веры Антоновой">
+            </picture>
             <div class="slide-text">Сайт психолога Веры Антоновой</div>
           </div>
           <div class="slider__item">
-            <img src="dist/img/Layer_0.png" class="slide-image" alt="Сайт магазина детской одежды">
+            <picture>
+              <source type="image/webp" srcset="dist/img/work2.webp 1x, dist/img/work2@2x.webp 2x">
+              <source srcset="dist/img/work2.jpg 1x, dist/img/work2@2x.jpg 2x">
+              <img class="slide-image" src="dist/img/work2.jpg" srcset="dist/img/work2@2x.jpg 2x"
+                alt="Сайт магазина детской одежды">
+            </picture>
             <div class="slide-text">Сайт магазина детской одежды</div>
           </div>
           <div class="slider__item">
-            <img src="dist/img/Layer_2.png" class="slide-image" alt="Сайт магазина «Рыболов»">
+            <picture>
+              <source type="image/webp" srcset="dist/img/work3.webp 1x, dist/img/work3@2x.webp 2x">
+              <source srcset="dist/img/work3.jpg 1x, dist/img/work3@2x.jpg 2x">
+              <img class="slide-image" src="dist/img/work3.jpg" srcset="dist/img/work3@2x.jpg 2x"
+                alt="Сайт магазина «Рыболов">
+            </picture>
             <div class="slide-text">Сайт магазина «Рыболов»</div>
           </div>
           <div class="slider__item">
-            <img src="dist/img/Layer_4.png" class="slide-image" alt="Сайт психолога Веры Антоновой">
+            <picture>
+              <source type="image/webp" srcset="dist/img/work1.webp 1x, dist/img/work1@2x.webp 2x">
+              <source srcset="dist/img/work1.jpg 1x, dist/img/work1@2x.jpg 2x">
+              <img class="slide-image" src="dist/img/work1.jpg" srcset="dist/img/work1@2x.jpg 2x"
+                alt="Сайт психолога Веры Антоновой">
+            </picture>
             <div class="slide-text">Сайт психолога Веры Антоновой</div>
           </div>
           <div class="slider__item">
-            <img src="dist/img/Layer_3.png" class="slide-image" alt="Сайт магазина детской одежды">
+            <picture>
+              <source type="image/webp" srcset="dist/img/work2.webp 1x, dist/img/work2@2x.webp 2x">
+              <source srcset="dist/img/work2.jpg 1x, dist/img/work2@2x.jpg 2x">
+              <img class="slide-image" src="dist/img/work2.jpg" srcset="dist/img/work2@2x.jpg 2x"
+                alt="Сайт магазина детской одежды">
+            </picture>
             <div class="slide-text">Сайт магазина детской одежды</div>
           </div>
           <div class="slider__item">
-            <img src="dist/img/Layer_5.png" class="slide-image" alt="Сайт магазина «Рыболов»">
+            <picture>
+              <source type="image/webp" srcset="dist/img/work3.webp 1x, dist/img/work3@2x.webp 2x">
+              <source srcset="dist/img/work3.jpg 1x, dist/img/work3@2x.jpg 2x">
+              <img class="slide-image" src="dist/img/work3.jpg" srcset="dist/img/work3@2x.jpg 2x"
+                alt="Сайт магазина «Рыболов">
+            </picture>
             <div class="slide-text">Сайт магазина «Рыболов»</div>
           </div>
         </div>
+
+
         <!-- /.slider-->
         <button class="button portfolio__button" id="portfolio__button">Заказать проект</button>
       </div>
@@ -282,7 +324,7 @@
       }
       window.requestAnimationFrame(updateLax)
     }</script>
-  <script src="dist/final.js?cb=1588186272792"></script>
+  <script src="dist/final.js"></script>
 </body>
 
 </html>

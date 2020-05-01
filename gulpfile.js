@@ -6,9 +6,8 @@ const cssnano = require("cssnano");
 const concat = require("gulp-concat");
 const postcss = require("gulp-postcss");
 const sourcemaps = require("gulp-sourcemaps");
-const uglify = require("gulp-uglify");
 const terser = require("gulp-terser");
-const replace = require("gulp-replace");
+// const replace = require("gulp-replace");
 
 // Paths
 
@@ -37,14 +36,14 @@ function jsTask() {
     .pipe(dest("dist"));
 }
 
-// Cachebuster
+// // Cachebuster
 
-const cbString = new Date().getTime();
-function cacheTask() {
-  return src(["index.html"])
-    .pipe(replace(/cb=\d+/g, "cb=" + cbString))
-    .pipe(dest("."));
-}
+// const cbString = new Date().getTime();
+// function cacheTask() {
+//   return src(["index.html"])
+//     .pipe(replace(/cb=\d+/g, "cb=" + cbString))
+//     .pipe(dest("."));
+// }
 
 // Watch
 
